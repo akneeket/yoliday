@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+sqlalchemy
+google-generativeai
+streamlit
+python-dotenv
+requests
+passlib[bcrypt]
+pytest
+ httpx
