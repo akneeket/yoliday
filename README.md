@@ -59,6 +59,7 @@ Yoliday is a FastAPI-based web application that generates casual and formal text
    git clone https://github.com/akneeket/yoliday.git
    cd yoliday
 
+
 2. **Create and activate a virtual environment:**
 
    ```bash
@@ -134,6 +135,39 @@ For testing and demo purposes, you can use the following user accounts to log in
 
 ---
 
+## 🌐 Deployment and Technology Integration
+
+In this project, we've combined **FastAPI**, **Render**, and **Streamlit Community Cloud** to build and deploy our application in a seamless, cloud-based setup:
+
+✅ **FastAPI**
+
+* Used as the core web application framework to build our backend API endpoints.
+* It powers the main logic for user login, query generation (casual and formal text), and history tracking.
+* Locally runs at `http://127.0.0.1:8000/docs` for testing and Swagger documentation.
+
+✅ **Render**
+
+* Deployed our FastAPI backend to Render, a fully managed cloud platform.
+* Render automatically builds and deploys the app from our GitHub repository, ensuring it’s **always live and accessible**.
+* No need to keep your local machine or GitHub open—Render hosts the FastAPI app 24/7.
+
+✅ **Streamlit Community Cloud**
+
+* We used Streamlit to build a **user-friendly frontend** that interacts with the FastAPI backend.
+* The Streamlit app provides an intuitive UI for users to log in, enter queries, and view generated responses.
+* Deployed to Streamlit Community Cloud, making it easily shareable and accessible via a unique URL.
+
+🪄 **How It All Works Together:**
+
+1. **Users access the Streamlit app** (hosted on Streamlit Community Cloud).
+2. The Streamlit frontend **sends API requests** to the FastAPI backend hosted on Render.
+3. FastAPI processes these requests, interacts with the database, and generates responses.
+4. The responses are **displayed in real-time on the Streamlit app**.
+
+✅ This architecture ensures the app is fully functional and accessible **without needing to keep your local environment running**!
+
+---
+
 ## 🤝 Contribution
 
 Feel free to fork the repo, add features, and submit pull requests. Please raise issues for any bugs or feature requests.
@@ -144,6 +178,10 @@ Feel free to fork the repo, add features, and submit pull requests. Please raise
 
 This project is a demo/prototype and should not be used as-is in production. It lacks robust security and error handling for real-world usage.
 
----
+```
 
-
+Let me know if you want to:  
+- Add links to the actual Streamlit and Render deployments,  
+- Polish further (like adding badges or CI info),  
+- Or make any final tweaks! 🚀✨
+```
